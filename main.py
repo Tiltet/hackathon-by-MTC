@@ -36,7 +36,7 @@ if __name__ == '__main__':
     main()
 
 
-def save_img(img, name: str, cmap=''):
+def save_img(img, name: str, cmap=None):
     plt.imshow(img, cmap=cmap)
     plt.axis('off')
     plt.savefig(name + '.png', bbox_inches='tight', pad_inches=0)

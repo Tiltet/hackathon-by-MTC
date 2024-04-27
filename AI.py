@@ -39,7 +39,7 @@ class TextureGenerator():
         texture_alpha = output_array[:, :, 3]
         texture_depth = output_array[:, :, 4]
 
-        return texture_rgb.resape(2048, 2048, 3), texture_alpha.resape(2048, 2048), texture_depth.resape(2048, 2048)
+        return texture_rgb, texture_alpha, texture_depth
 
     def train_model(self, epochs=10, batch_size=32):
         self.model.fit(self.train_data_x, self.train_data_y, epochs=epochs, batch_size=batch_size)
