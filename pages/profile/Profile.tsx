@@ -7,7 +7,7 @@ export function Profile() {
         <View>
             <View  style={page.header}>
                 <View>
-                    <Image source={require('../../assets/img/profile/MTSlogo.png')} style={page.image} />
+                    <Image source={require('../../assets/MTC_logo.png')} style={page.image} />
                 </View>
                 <View style={page.headeImageContainer}>
                     <TouchableOpacity>
