@@ -4,9 +4,7 @@ import Test from "./components/auth/Login";
 
 export default function App() {
   return (
-
       <Test/>
-
   );
 }
 
