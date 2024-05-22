@@ -1,16 +1,20 @@
 import {StatusBar, TextInput, TouchableOpacity} from "react-native";
 import * as React from 'react';
-import {View, Text, Button, Image} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import {View, Text, Image} from 'react-native';
 import {useState} from "react";
 import {loginStyle} from "./loginStyle";
+import {NavContext} from "../../context/navigattionContext";
 
 // СТРАНИЦА ВХОДА В АККАУНТ
-export function HomeScreen({navigation}: any) {
+export function HomeScreen() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const { index, setIndex } = React.useContext(NavContext);
+
+    const handlerButtonClick = () => {
+        setIndex(1)
+    }
 
     return (
         <View style={loginStyle.wrapper}>
@@ -35,35 +39,12 @@ export function HomeScreen({navigation}: any) {
                 />
                 <TouchableOpacity
                     style={loginStyle.button}
-                    onPress={() => navigation.navigate('Navigation')}
+                    onPress={() => handlerButtonClick()}
                 >
                     <Text style={loginStyle.button_text}>Войти</Text>
                 </TouchableOpacity>
-
+                <StatusBar barStyle="dark-content" />
             </View>
-            <StatusBar barStyle="dark-content" />
         </View>
-    );
-}
-
-function DetailsScreen({navigation}: any) {
-    return (
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Text>Details Screen</Text>
-            <Button title='Back Home' onPress={() => navigation.navigate('Home')}/>
-        </View>
-    );
-}
-
-const Stack = createBottomTabNavigator();
-
-export default function Test() {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name='Details' component={DetailsScreen}/>
-                <Stack.Screen name="Home" component={HomeScreen}/>
-            </Stack.Navigator>
-        </NavigationContainer>
     );
 }

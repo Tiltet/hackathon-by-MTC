@@ -54,9 +54,7 @@ export const loginStyle = StyleSheet.create({
         justifyContent:"center",
         alignItems: 'center',
         borderRadius: 10,
-        borderWidth: 2,
         color:'red',
-        borderColor: '#e7e7e7',
     },
     button_text: {
         fontSize: 18,
