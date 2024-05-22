@@ -13,10 +13,18 @@ export function Navigation() {
     return (
         <NavigationContainer>
             <Tab.Navigator screenOptions={{headerShown: true,}}>
-                <Tab.Screen options={{headerShown: false,}} name="Главная" component={Main} />
+                <Tab.Screen
+                    options={{headerShown: false,}}
+                    name="Главная"
+                    component={Main}
+                />
                 <Tab.Screen name="Профиль" component={Profile} />
                 <Tab.Screen name="Топ" component={Top} />
-                <Tab.Screen options={{headerShown: false,}} name="Еще" component={More} />
+                <Tab.Screen
+                    options={{headerShown: false,}}
+                    name="Еще"
+                    component={More}
+                />
             </Tab.Navigator>
             <StatusBar barStyle="default"/>
         </NavigationContainer>

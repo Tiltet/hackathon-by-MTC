@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Text, Button, TouchableOpacity} from "react-native";
+import {View, Text, TouchableOpacity} from "react-native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {Settings} from "../settings/Settings";
 
@@ -32,7 +32,7 @@ function Page1({ navigation }) {
     return (
         <View>
             <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
-                <Text>Настройки</Text>
+                <Text>Страница 1</Text>
             </TouchableOpacity>
         </View>
     );
