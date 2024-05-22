@@ -1,11 +1,15 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-import { Navigation } from "./components/navigation/Navigation";
-import Test from "./components/auth/Login";
+import { useState } from "react";
+import { HomeScreen } from "./components/auth/Login";
 
 export default function App() {
+
+  const [auth, setAuth] = useState(false)
+
   return (
-      <Test/>
+      // <Navigation/>
+      <HomeScreen/>
   );
 }
 
