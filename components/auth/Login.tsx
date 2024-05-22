@@ -1,86 +1,50 @@
-import {StyleSheet, TextInput, TouchableOpacity} from "react-native";
+import {StatusBar, TextInput, TouchableOpacity} from "react-native";
 import * as React from 'react';
-import {View, Text, Button} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import {View, Text, Image} from 'react-native';
 import {useState} from "react";
+import {loginStyle} from "./loginStyle";
+import {NavContext} from "../../context/navigattionContext";
 
-function HomeScreen({navigation}: any) {
-
+// СТРАНИЦА ВХОДА В АККАУНТ
+export function HomeScreen() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    return (
-        <View style={styles.container}>
-            <Text style={{marginVertical:20}}>LOGIN</Text>
-            <TextInput
-                style={styles.input}
-                value={email}
-                onChangeText={setEmail}
-                placeholder="Email"
-            />
+    const { index, setIndex } = React.useContext(NavContext);
 
-            <TextInput
-                style={styles.input}
-                value={password}
-                onChangeText={setPassword}
-                placeholder="Password"
-                secureTextEntry
-            />
-            <TouchableOpacity
-
-                onPress={() => navigation.navigate('Details')}
-            >
-                <Text>GO</Text>
-            </TouchableOpacity>
-        </View>
-    );
-}
-
-function DetailsScreen({navigation}: any) {
-    return (
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Text>Details Screen</Text>
-            <Button title='Back Home' onPress={() => navigation.navigate('Home')}/>
-        </View>
-    );
-}
-
-const Stack = createBottomTabNavigator();
-
-function Test() {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name='Details' component={DetailsScreen}/>
-                <Stack.Screen name="Home" component={HomeScreen}/>
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginVertical:50,
-        marginHorizontal:50,
-        padding: 8,
-        backgroundColor: '#e11414',
-        borderRadius: 16,
-        borderWidth: 2,
-        borderColor: '#2f4554'
-    },
-    input:{
-        height:40,
-        width:120,
-        padding: 8,
-        backgroundColor: '#fdfdfd',
-        borderRadius: 16,
-        borderWidth: 2,
-        borderColor: '#2f4554'
+    const handlerButtonClick = () => {
+        setIndex(1)
     }
-})
 
-export default Test;
+    return (
+        <View style={loginStyle.wrapper}>
+            <View style={loginStyle.container}>
+                <View style={loginStyle.image_container}>
+                    <Image style={loginStyle.image} source={require('../../assets/MTC_logo.png')}/>
+                </View>
+                <Text style={loginStyle.text_login}>Введите логин</Text>
+                <TextInput
+                    style={loginStyle.input}
+                    value={email}
+                    onChangeText={setEmail}
+                    placeholder="+375 (__) ___-__-__"
+                />
+                <Text style={loginStyle.text_password}>Введите пароль</Text>
+                <TextInput
+                    style={loginStyle.input}
+                    value={password}
+                    onChangeText={setPassword}
+                    placeholder="Пароль"
+                    secureTextEntry
+                />
+                <TouchableOpacity
+                    style={loginStyle.button}
+                    onPress={() => handlerButtonClick()}
+                >
+                    <Text style={loginStyle.button_text}>Войти</Text>
+                </TouchableOpacity>
+                <StatusBar barStyle="dark-content" />
+            </View>
+        </View>
+    );
+}

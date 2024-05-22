@@ -4,7 +4,7 @@ import { View, Text } from "react-native";
 export function News() {
     return (
         <View>
-            <Text>New News</Text>
+            <Text>News</Text>
         </View>
     )
 }
