@@ -27,8 +27,10 @@ function HomeScreen({navigation}: any) {
                 placeholder="Пароль"
                 secureTextEntry
             />
-            <View style={styles.go}>
+
+            <View >
                 <TouchableOpacity
+                    style={styles.go}
                     onPress={() => navigation.navigate('Details')}
                 >
                     <Text style={{color:'white'}}>Войти</Text>
@@ -95,7 +97,7 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         borderWidth: 2,
         color:'red',
-        borderColor: '#f56f6f',
+        borderColor: '#e7e7e7',
         width:280,
         height:30
     }
