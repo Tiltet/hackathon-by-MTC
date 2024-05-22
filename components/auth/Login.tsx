@@ -7,6 +7,7 @@ import {useState} from "react";
 
 function HomeScreen({navigation}: any) {
 
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     return (
@@ -83,4 +84,3 @@ const styles = StyleSheet.create({
 })
 
 export default Test;
-
