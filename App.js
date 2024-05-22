@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { Navigation } from "./components/navigation/Navigation";
+import Test from "./components/auth/Login";
 
 export default function App() {
   return (
-      <Navigation/>
+      <Test/>
   );
 }
 
