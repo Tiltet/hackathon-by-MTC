@@ -1,12 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View } from 'react-native';
+import Test from "./components/auth/Login";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>MTC application</Text>
-      <StatusBar style="auto" />
-    </View>
+
+      <Test/>
+
   );
 }
 
