@@ -1,10 +1,10 @@
-
-import { StyleSheet, Text, View } from 'react-native';
-import Test from "./components/auth/Login";
+import * as React from 'react';
+import { StyleSheet } from 'react-native';
+import { Navigation } from "./components/navigation/Navigation";
 
 export default function App() {
   return (
-      <Test/>
+      <Navigation/>
   );
 }
 
