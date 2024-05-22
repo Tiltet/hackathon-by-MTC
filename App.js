@@ -1,18 +1,28 @@
-
-import { StyleSheet, Text, View } from 'react-native';
-import Test from "./components/auth/Login";
+import * as React from 'react';
+import {StyleSheet, View, Text, SafeAreaView, StatusBar} from 'react-native';
+import { useState } from "react";
+import { NavContext } from "./context/navigattionContext";
+import {HomeScreen} from "./components/auth/Login";
+import {Navigation} from "./components/navigation/Navigation";
+import {NavigationContainer} from "@react-navigation/native";
 
 export default function App() {
+
+  const [auth, setAuth] = useState(false)
+  const [index, setIndex] = useState(0)
+
   return (
-      <Test/>
+      <NavigationContainer>
+        <NavContext.Provider value={{ index, setIndex }}>
+          {index === 0 && <HomeScreen/>}
+          {index === 1 && <Navigation/>}
+        </NavContext.Provider>
+      </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginHorizontal: 15,
   },
 });
