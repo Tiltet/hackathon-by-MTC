@@ -9,18 +9,18 @@ import {Profile} from "./pages/profile/Profile";
 
 export default function App() {
 
-  const [auth, setAuth] = useState(false)
-  const [index, setIndex] = useState(0)
+    const [auth, setAuth] = useState(false)
+    const [index, setIndex] = useState(0)
 
-  return (
-      <NavigationContainer>
-          <NavContext.Provider value={{ index, setIndex }}>
-              {index === 0 && <HomeScreen/>}
-              {index === 1 && <Navigation/>}
-              {index === 2 && <Profile/>}
-          </NavContext.Provider>
-      </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <NavContext.Provider value={{ index, setIndex }}>
+                {index === 0 && <HomeScreen/>}
+                {index === 1 && <Navigation/>}
+                {index === 2 && <Profile/>}
+            </NavContext.Provider>
+        </NavigationContainer>
+    );
 }
 
 export const styles=StyleSheet.create({
