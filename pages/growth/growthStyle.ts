@@ -49,7 +49,6 @@ export const growthStyle = StyleSheet.create({
     },
     container: {
         marginTop: 15,
-        marginHorizontal: 15,
     },
     headerContainer: {
         width: "100%",
