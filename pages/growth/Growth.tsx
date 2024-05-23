@@ -39,7 +39,7 @@ export function Growth() {
     }
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{height: "100%"}}>
             <Header/>
             <ScrollView>
                 <View style={styles.container}>

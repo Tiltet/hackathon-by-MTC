@@ -4,10 +4,6 @@ import {groupStyle} from "./groupStyle";
 import { Header } from "../../components/header/Header";
 import {useState} from "react";
 import {styles} from "../../App";
-import {growthStyle} from "../growth/growthStyle";
-import {Rating} from "../growth/rating/Rating";
-import Train from "../growth/trainings/Train";
-import Career from "../growth/career/Career";
 import {Team} from "./team/Team";
 import {Department} from "./department/Department";
 import {Information} from "./information/information";
@@ -43,7 +39,7 @@ export function Group() {
     }
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{height: "100%"}}>
             <Header/>
             <ScrollView>
                 <View style={styles.container}>
