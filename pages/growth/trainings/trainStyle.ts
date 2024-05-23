@@ -7,7 +7,6 @@ export const growthStyle = StyleSheet.create({
         width: '100%',
         height: '100%',
         paddingBottom:170
-
     },
     train: {
         justifyContent:'center',
@@ -15,7 +14,7 @@ export const growthStyle = StyleSheet.create({
         borderRadius: 20,
         marginHorizontal:10,
         width: 353,
-        height:194,
+        height:150,
         backgroundColor: "#ffffff",
         shadowColor: '#000',
         shadowOffset: {

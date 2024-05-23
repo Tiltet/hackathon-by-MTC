@@ -99,6 +99,7 @@ export function Navigation() {
                             source={require('../../assets/icons/navigation/profile.png')}
                         />
                     ),
+                    tabBarAccessibilityLabel: "red"
                 }}
             />
         </Tab.Navigator>

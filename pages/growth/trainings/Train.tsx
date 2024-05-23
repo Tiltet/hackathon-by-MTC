@@ -20,7 +20,7 @@ const Train = () => {
                     paddingTop:10
                 }}>
                     <Text style={growthStyle.button_text}>Психология продaж</Text>
-                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:50 }}>
+                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:40 }}>
                         <Text style={growthStyle.button_text_dlit}>3 месяца</Text>
                     </View>
                 </View>
@@ -40,7 +40,7 @@ const Train = () => {
                     paddingTop:10
                 }}>
                     <Text style={growthStyle.button_text}>Инвестиции</Text>
-                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:75 }}>
+                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:65 }}>
                         <Text style={growthStyle.button_text_dlit}>3 месяца</Text>
                     </View>
                 </View>
@@ -60,7 +60,7 @@ const Train = () => {
                     paddingTop:10
                 }}>
                     <Text style={growthStyle.button_text}>Кибербезопасноть</Text>
-                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:80 }}>
+                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:60 }}>
                         <Text style={growthStyle.button_text_dlit}>3 месяца</Text>
                     </View>
                 </View>
@@ -79,7 +79,7 @@ const Train = () => {
                     paddingTop:10
                 }}>
                     <Text style={growthStyle.button_text}>Страхование</Text>
-                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:80 }}>
+                    <View style={{flex:1, justifyContent:'flex-end', flexDirection:'row',  paddingRight:10, paddingTop:60 }}>
                         <Text style={growthStyle.button_text_dlit}>3 месяца</Text>
                     </View>
                 </View>

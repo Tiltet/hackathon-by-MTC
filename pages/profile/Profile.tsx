@@ -19,7 +19,10 @@ export function Profile() {
                     headerShown: false,
                 }}
             />
-            <ProfileStack.Screen name="Статистика" component={Statistics} />
+            <ProfileStack.Screen
+                name="Статистика"
+                component={Statistics}
+            />
             <ProfileStack.Screen name="График" component={Schedule} />
             <ProfileStack.Screen name="Бонусы" component={Bonuses} />
             <ProfileStack.Screen name="Настройки" component={Settings} />

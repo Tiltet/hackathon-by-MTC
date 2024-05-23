@@ -15,7 +15,7 @@ const Career = () => {
                         <Text style={careerStyle.button_text}>Тим-лидер</Text>
                         <Text style={careerStyle.button_text_dlit}>3 месяца</Text>
                     </View>
-                    <Image style={{marginRight:10, marginTop:20}} source={require('../../../assets/Vector.png')}/>
+                    <Image style={{marginRight:20, marginTop:20}} source={require('../../../assets/Vector.png')}/>
                 </View>
 
             </TouchableOpacity>
@@ -29,7 +29,7 @@ const Career = () => {
                         <Text style={careerStyle.button_text}>Тестировщик</Text>
                         <Text style={careerStyle.button_text_dlit}>3 месяца</Text>
                     </View>
-                    <Image style={{marginRight:10, marginTop:20}} source={require('../../../assets/Vector.png')}/>
+                    <Image style={{marginRight:20, marginTop:20}} source={require('../../../assets/Vector.png')}/>
                 </View>
             </TouchableOpacity>
             <TouchableOpacity
@@ -42,7 +42,7 @@ const Career = () => {
                         <Text style={careerStyle.button_text}>Интернет-маркетолог</Text>
                         <Text style={careerStyle.button_text_dlit}>3 месяца</Text>
                     </View>
-                    <Image style={{marginRight:10, marginTop:20}} source={require('../../../assets/Vector.png')}/>
+                    <Image style={{marginRight:20, marginTop:20}} source={require('../../../assets/Vector.png')}/>
                 </View>
             </TouchableOpacity>
             <TouchableOpacity
@@ -55,7 +55,7 @@ const Career = () => {
                         <Text style={careerStyle.button_text}>Инжерен-психолог</Text>
                         <Text style={careerStyle.button_text_dlit}>3 месяца</Text>
                     </View>
-                    <Image style={{marginRight:10, marginTop:20}} source={require('../../../assets/Vector.png')}/>
+                    <Image style={{marginRight:20, marginTop:20}} source={require('../../../assets/Vector.png')}/>
                 </View>
             </TouchableOpacity>
             <TouchableOpacity
@@ -68,7 +68,7 @@ const Career = () => {
                         <Text style={careerStyle.button_text}>Дизайнер</Text>
                         <Text style={careerStyle.button_text_dlit}>3 месяца</Text>
                     </View>
-                    <Image style={{marginRight:10, marginTop:20}} source={require('../../../assets/Vector.png')}/>
+                    <Image style={{marginRight:20, marginTop:20}} source={require('../../../assets/Vector.png')}/>
                 </View>
             </TouchableOpacity>
             <TouchableOpacity
@@ -81,7 +81,7 @@ const Career = () => {
                         <Text style={careerStyle.button_text}>DevOps</Text>
                         <Text style={careerStyle.button_text_dlit}>3 месяца</Text>
                     </View>
-                    <Image style={{marginRight:10, marginTop:20}} source={require('../../../assets/Vector.png')}/>
+                    <Image style={{marginRight:20, marginTop:20}} source={require('../../../assets/Vector.png')}/>
                 </View>
             </TouchableOpacity>
         </View>

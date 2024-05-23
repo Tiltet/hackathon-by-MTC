@@ -6,7 +6,7 @@ export function BreackDowns() {
     return (
         <SafeAreaView>
             <View style={breackDownsStyle.container}>
-                <Text style={breackDownsStyle.text}>BreackDowns</Text>
+                <Text style={breackDownsStyle.text}>Общий чат в разработке</Text>
             </View>
         </SafeAreaView>
     )
