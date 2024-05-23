@@ -19,5 +19,7 @@ export const growthStyle = StyleSheet.create({
         fontSize: 20,
         color:'#1f1f1f',
         textAlign: "center",
-    }
+    },
+
 });
+
