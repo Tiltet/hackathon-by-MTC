@@ -37,7 +37,6 @@ export function Navigation() {
                     ),
                 }}
             />
-
             {/* Вторая */}
             <Tab.Screen
                 name="Группа"
