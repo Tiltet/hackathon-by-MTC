@@ -4,8 +4,9 @@ export const teamStyle = StyleSheet.create({
     container: {
         marginTop: 15,
         borderWidth: 1,
-        borderRadius: 5,
-        borderColor: 'rgba(0, 0, 0, 0.8)',
+        borderRadius: 10,
+        borderColor: 'rgba(0, 0, 0, 0.2)',
+        overflow: "hidden",
     },
     mainLine: {
         paddingHorizontal: 15,
@@ -14,7 +15,7 @@ export const teamStyle = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        backgroundColor: "#888",
+        backgroundColor: "rgba(0, 0, 0, 0.2)",
     },
     nameColumn: {
         width: "50%",
@@ -39,5 +40,6 @@ export const teamStyle = StyleSheet.create({
         justifyContent: "space-between",
         paddingBottom: 15,
         borderBottomWidth: 1,
+        borderBottomColor: "rgba(0, 0, 0, 0.1)",
     }
 });
