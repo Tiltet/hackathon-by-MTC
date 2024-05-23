@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad0ffa41-6555-48c9-8977-c043687e0d08" name="Changes" comment="feat: STABLE VERSION 1.1" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="DEVELOP" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tiltet&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Tiltet/HACKATHON.git",
+    "accountId": "2bf518a1-2995-4fed-9724-316043d64cd9"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "Tiltet",
+    "repository": "HACKATHON"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2gjtAePcVBHkffktye2WJ9QoWny" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.App.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Tiltet/developer",
+    "last_opened_file_path": "/Users/timofey/WebstormProjects/HACKATHON/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/profile" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad0ffa41-6555-48c9-8977-c043687e0d08" name="Changes" comment="" />
+      <created>1716222672798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716222672798</updated>
+      <workItem from="1716222673902" duration="27000" />
+      <workItem from="1716222710484" duration="4532000" />
+      <workItem from="1716331349047" duration="99000" />
+      <workItem from="1716336718161" duration="23136000" />
+      <workItem from="1716412061544" duration="17819000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix: remove python files">
+      <option name="closed" value="true" />
+      <created>1716224296782</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716224296782</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: init expo project">
+      <option name="closed" value="true" />
+      <created>1716224330535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716224330535</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: add files">
+      <option name="closed" value="true" />
+      <created>1716378261415</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716378261415</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add navigation">
+      <option name="closed" value="true" />
+      <created>1716390274067</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716390274067</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: add tops">
+      <option name="closed" value="true" />
+      <created>1716396171163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716396171163</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add login">
+      <option name="closed" value="true" />
+      <created>1716414556714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716414556714</updated>
+    </task>
+    <task id="LOCAL-00007" summary="STABLE VERSION">
+      <option name="closed" value="true" />
+      <created>1716417470351</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716417470351</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: images">
+      <option name="closed" value="true" />
+      <created>1716419532726</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716419532726</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: profile + add nav icons">
+      <option name="closed" value="true" />
+      <created>1716424352357</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716424352357</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: STABLE VERSION 1.1">
+      <option name="closed" value="true" />
+      <created>1716429738803</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716429738803</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: remove python files" />
+    <MESSAGE value="feat: init expo project" />
+    <MESSAGE value="feat: add files" />
+    <MESSAGE value="feat: add navigation" />
+    <MESSAGE value="feat: add tops" />
+    <MESSAGE value="feat: add login" />
+    <MESSAGE value="STABLE VERSION" />
+    <MESSAGE value="fix: images" />
+    <MESSAGE value="fix: profile + add nav icons" />
+    <MESSAGE value="feat: STABLE VERSION 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: STABLE VERSION 1.1" />
+  </component>
+</project>
