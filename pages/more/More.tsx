@@ -37,22 +37,3 @@ function Page1({ navigation }) {
         </View>
     );
 }
-
-{/*
-        <SafeAreaView>
-            <View style={moreStyle.container}>
-                <TouchableOpacity style={moreStyle.link} onPress={() => navigation.navigate('Settings')}>
-                    <Text style={moreStyle.link_text}>Настройки</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={moreStyle.link}>
-                    <Text style={moreStyle.link_text}>Новости</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={moreStyle.link}>
-                    <Text style={moreStyle.link_text}>Статистика</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={moreStyle.link}>
-                    <Text style={moreStyle.link_text}>Выйти</Text>
-                </TouchableOpacity>
-            </View>
-        </SafeAreaView>
-        */}
