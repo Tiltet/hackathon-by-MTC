@@ -6,6 +6,7 @@ import {useState} from "react";
 import {Rating} from "./rating/Rating";
 import Toucha from "../../ui/touchableOpacity/Toucha";
 import {Header} from "../../components/header/Header";
+import Train from "./trainings/Train";
 
 export function Growth() {
 
@@ -42,20 +43,6 @@ export function Growth() {
             <Header/>
             <ScrollView>
                 <View style={styles.container}>
-                    {/*<View style={growthStyle.buttons}>*/}
-                    {/*    <Toucha*/}
-                    {/*        title={'Рейтинг'}*/}
-                    {/*        onTouch={() => setIndex(1)}*/}
-                    {/*    />*/}
-                    {/*    <Toucha*/}
-                    {/*        title={'Тренинги'}*/}
-                    {/*        onTouch={() => setIndex(1)}*/}
-                    {/*    />*/}
-                    {/*    <Toucha*/}
-                    {/*        title={'Карьера'}*/}
-                    {/*        onTouch={() => setIndex(1)}*/}
-                    {/*    />*/}
-                    {/*</View>*/}
                     <View style={growthStyle.container}>
                         <View style={growthStyle.headerContainer}>
                             <TouchableOpacity
@@ -84,7 +71,7 @@ export function Growth() {
                         </View>
                     ) :  index === 2 ? (
                         <View>
-                            <Text>Тренинги</Text>
+                            <Train/>
                         </View>
                     ) :  index === 3 ? (
                         <View>

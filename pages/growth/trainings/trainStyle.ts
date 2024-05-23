@@ -5,21 +5,48 @@ export const growthStyle = StyleSheet.create({
         flexDirection: 'column',
         alignItems: "center",
         width: '100%',
-        height: '100%'
+        height: '100%',
+        paddingVertical:29,
+        paddingBottom:170
+
     },
     train: {
-        paddingVertical: 5,
+        justifyContent:'center',
         marginTop:10,
         borderRadius: 20,
-        width: "91%",
-        height:45,
-        backgroundColor: "#d7d6d6",
+        marginHorizontal:10,
+        width: 353,
+        height:194,
+        backgroundColor: "#ffffff",
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 4
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+        flex:1,
+        flexDirection:'row',
+        alignItems:"center"
     },
     button_text: {
         fontSize: 20,
         color:'#1f1f1f',
         textAlign: "center",
+        paddingBottom:10,
+        justifyContent:'space-between',
+        paddingHorizontal:5
+
     },
+    button_text_dlit: {
+        fontSize: 20,
+        color:'#524f4f',
+        textAlign: "center",
+        paddingBottom:10,
+        justifyContent:'space-between'
+    },
+
 
 });
 
