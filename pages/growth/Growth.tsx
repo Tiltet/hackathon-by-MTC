@@ -7,6 +7,7 @@ import {Rating} from "./rating/Rating";
 import Toucha from "../../ui/touchableOpacity/Toucha";
 import {Header} from "../../components/header/Header";
 import Train from "./trainings/Train";
+import Career from "./career/Career";
 
 export function Growth() {
 
@@ -75,7 +76,7 @@ export function Growth() {
                         </View>
                     ) :  index === 3 ? (
                         <View>
-                            <Text>Карьера</Text>
+                           <Career/>
                         </View>
                     ) : (
                         <View></View>
