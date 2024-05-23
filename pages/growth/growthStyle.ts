@@ -5,14 +5,20 @@ export const growthStyle = StyleSheet.create({
         fontSize: 50,
     },
     buttons: {
-        padding:10,
+        marginTop: 20,
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        backgroundColor:'#b2b1b1',
     },
-        container: {
-            marginHorizontal: 0,
-            height:'100%'
-        },
+    button: {
+        paddingVertical: 5,
+        borderRadius: 8,
+        width: "31%",
+        backgroundColor: "red",
+    },
+    button_text: {
+        fontSize: 20,
+        color: "white",
+        textAlign: "center",
+    }
 });
