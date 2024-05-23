@@ -4,6 +4,7 @@ import { growthStyle } from "./growthStyle";
 import {styles} from "../../App";
 import {useState} from "react";
 import {Rating} from "./rating/Rating";
+import Toucha from "../../ui/touchableOpacity/Toucha";
 
 export function Growth() {
 
@@ -13,24 +14,18 @@ export function Growth() {
         <ScrollView>
             <View style={styles.container}>
                 <View style={growthStyle.buttons}>
-                    <TouchableOpacity
-                        style={growthStyle.button}
-                        onPress={() => setIndex(1)}
-                    >
-                        <Text style={growthStyle.button_text}>Рейтинг</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        style={growthStyle.button}
-                        onPress={() => setIndex(2)}
-                    >
-                        <Text style={growthStyle.button_text}>Тренинги</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        style={growthStyle.button}
-                        onPress={() => setIndex(3)}
-                    >
-                        <Text style={growthStyle.button_text}>Карьера</Text>
-                    </TouchableOpacity>
+                    <Toucha
+                        title={'Рейтинг'}
+                        onTouch={() => setIndex(1)}
+                    />
+                    <Toucha
+                        title={'Тренинги'}
+                        onTouch={() => setIndex(1)}
+                    />
+                    <Toucha
+                        title={'Карьера'}
+                        onTouch={() => setIndex(1)}
+                    />
                 </View>
 
                 { index === 1 ? (
