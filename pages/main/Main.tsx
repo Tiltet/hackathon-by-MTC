@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Text, SafeAreaView, TouchableOpacity} from "react-native";
+import {View, Text, SafeAreaView, TouchableOpacity, ScrollView} from "react-native";
 import {mainStyle} from "./mainStyle";
 import {Header} from "../../components/header/Header";
 import {chatStyle} from "../chat/chatStyle";
@@ -40,7 +40,7 @@ export function Main() {
     return (
         <SafeAreaView>
             <Header/>
-            <View style={mainStyle.container}>
+            <ScrollView style={mainStyle.container}>
                 <View style={chatStyle.container}>
                     <View style={chatStyle.headerContainer}>
                         <TouchableOpacity
@@ -58,7 +58,7 @@ export function Main() {
                     </View>
 
                     { index === 1 ? (
-                        <View>
+                        <View style={{ marginBottom: 60 }}>
                             <News/>
                         </View>
                     ) :  index === 2 ? (
@@ -70,7 +70,7 @@ export function Main() {
                     )}
 
                 </View>
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }
