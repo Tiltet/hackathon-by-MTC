@@ -11,7 +11,7 @@ export function SelectedChat() {
     const [ selectedChats, setSelectedChats ] = useState(staticSelectedChats);
 
     const renderSelectedChats = () => {
-        return selectedChats.slice(0,5).map((item, index) => (
+        return selectedChats.slice(0,10).map((item, index) => (
             <View style={selectedChatStyle.chat} key={item.id}>
                 <Image
                     style={selectedChatStyle.chat_image}

@@ -1,10 +1,11 @@
 import * as React from 'react';
-import {Text, SafeAreaView, View, TouchableOpacity} from "react-native";
+import {Text, SafeAreaView, View, TouchableOpacity, ScrollView} from "react-native";
 import {chatStyle} from "./chatStyle";
 import {Header} from "../../components/header/Header";
 import {useState} from "react";
 import {BreackDowns} from "./breakDowns/BreackDowns";
 import {SelectedChat} from "./selectedChat/SelectedChat";
+import {mainStyle} from "../main/mainStyle";
 
 export function Chat() {
 
@@ -39,33 +40,35 @@ export function Chat() {
     return (
         <SafeAreaView>
             <Header/>
-            <View style={chatStyle.container}>
-                <View style={chatStyle.headerContainer}>
-                    <TouchableOpacity
-                        style={chatStyle.headerContainer_link_first}
-                        onPress={() => handleButtonPress(1)}
-                    >
-                        <Text style={[chatStyle.headerContainer_link_text , { color: textFirstColor}]}>Избранное</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        style={chatStyle.headerContainer_link_second}
-                        onPress={() => handleButtonPress(2)}
-                    >
-                        <Text style={[chatStyle.headerContainer_link_text , { color: textSecondColor}]}>Общий чат</Text>
-                    </TouchableOpacity>
+            <ScrollView>
+                <View style={chatStyle.container}>
+                    <View style={chatStyle.headerContainer}>
+                        <TouchableOpacity
+                            style={chatStyle.headerContainer_link_first}
+                            onPress={() => handleButtonPress(1)}
+                        >
+                            <Text style={[chatStyle.headerContainer_link_text , { color: textFirstColor}]}>Избранное</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={chatStyle.headerContainer_link_second}
+                            onPress={() => handleButtonPress(2)}
+                        >
+                            <Text style={[chatStyle.headerContainer_link_text , { color: textSecondColor}]}>Общий чат</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-            </View>
-            { index === 2 ? (
-                <View>
-                    <BreackDowns/>
-                </View>
-            ) :  index === 1 ? (
-                <View>
-                    <SelectedChat/>
-                </View>
-            ) : (
-                <View></View>
-            )}
+                { index === 2 ? (
+                    <View style={{ marginBottom: 40 }}>
+                        <BreackDowns/>
+                    </View>
+                ) :  index === 1 ? (
+                    <View style={{ marginBottom: 40 }}>
+                        <SelectedChat/>
+                    </View>
+                ) : (
+                    <View></View>
+                )}
+            </ScrollView>
         </SafeAreaView>
     )
 }

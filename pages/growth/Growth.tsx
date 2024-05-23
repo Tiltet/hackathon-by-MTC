@@ -4,7 +4,6 @@ import { growthStyle } from "./growthStyle";
 import {styles} from "../../App";
 import {useState} from "react";
 import {Rating} from "./rating/Rating";
-import Toucha from "../../ui/touchableOpacity/Toucha";
 import {Header} from "../../components/header/Header";
 import Train from "./trainings/Train";
 import Career from "./career/Career";
