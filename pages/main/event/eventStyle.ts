@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const topStyle = StyleSheet.create({
+export const eventStyle = StyleSheet.create({
     container: {
 
     }

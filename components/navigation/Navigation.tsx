@@ -15,7 +15,7 @@ export function Navigation() {
     return (
         <Tab.Navigator
             screenOptions={{
-                headerShown: true,
+                headerShown: false,
                 tabBarLabelStyle: {
                     fontSize: 10,
                     color: '#A8A8A8',
@@ -27,7 +27,7 @@ export function Navigation() {
                 name="Развитие"
                 component={Growth}
                 options={{
-                    headerShown: true,
+                    headerShown: false,
                     tabBarLabel: "Развитие",
                     tabBarIcon: () => (
                         <Image
@@ -43,7 +43,7 @@ export function Navigation() {
                 name="Группа"
                 component={Group}
                 options={{
-                    headerShown: true,
+                    headerShown: false,
                     tabBarLabel: "Группа",
                     tabBarIcon: () => (
                         <Image
@@ -75,7 +75,7 @@ export function Navigation() {
                 name="Чат"
                 component={Chat}
                 options={{
-                    headerShown: true,
+                    headerShown: false,
                     tabBarLabel: "Чат",
                     tabBarIcon: () => (
                         <Image
@@ -89,6 +89,7 @@ export function Navigation() {
             {/* Пятая */}
             <Tab.Screen
                 name="Профиль"
+                component={Profile}
                 options={{
                     headerShown: false,
                     tabBarLabel: "Профиль",
@@ -99,7 +100,6 @@ export function Navigation() {
                         />
                     ),
                 }}
-                component={Profile}
             />
         </Tab.Navigator>
     )

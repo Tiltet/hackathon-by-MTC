@@ -21,6 +21,7 @@
     "react-native": "0.74.1",
     "react-native-safe-area-context": "^4.9.0",
     "react-native-screens": "^3.29.0",
+    "react-native-swiper": "^1.6.0",
     "typescript": "~5.3.3",
     "zod": "^3.22.4"
   },

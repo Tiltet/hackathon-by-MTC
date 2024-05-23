@@ -1,7 +1,10 @@
 import { StyleSheet } from "react-native";
 
-export const topStyle = StyleSheet.create({
+export const breackDownsStyle = StyleSheet.create({
     container: {
+
+    },
+    text: {
 
     }
 });

@@ -5,7 +5,7 @@ export const growthStyle = StyleSheet.create({
         fontSize: 50,
     },
     buttons: {
-        marginTop: 10,
+        marginTop: 20,
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",

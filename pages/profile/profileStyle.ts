@@ -14,11 +14,10 @@ export const profileStyle = StyleSheet.create({
         alignItems: 'center',
     },
     headerImage:{
-        height: 30,
-        width: 30,
+        height: 26,
+        width: 26,
     },
     headerImageContainer: {
-        width: 70,
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "row",
