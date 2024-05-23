@@ -8,7 +8,7 @@ type Props={
     title:string
 }
 
-const Toucha = ({onTouch, title, children}:Props) => {
+const Toucha = ({onTouch, title, children}:Props)  => {
     return (
         <TouchableOpacity
             style={touchStyles.button}

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {Text, ScrollView, View, TouchableOpacity} from "react-native";
+import {Text, ScrollView, View} from "react-native";
 import { growthStyle } from "./growthStyle";
-import {styles} from "../../App";
 import {useState} from "react";
 import {Rating} from "./rating/Rating";
 import Toucha from "../../ui/touchableOpacity/Toucha";
+import Train from "./trainings/Train";
 
 export function Growth() {
 
@@ -12,33 +12,47 @@ export function Growth() {
 
     return (
         <ScrollView>
-            <View style={styles.container}>
-                <View style={growthStyle.buttons}>
-                    <Toucha
-                        title={'Рейтинг'}
-                        onTouch={() => setIndex(1)}
-                    />
-                    <Toucha
-                        title={'Тренинги'}
-                        onTouch={() => setIndex(1)}
-                    />
-                    <Toucha
-                        title={'Карьера'}
-                        onTouch={() => setIndex(1)}
-                    />
-                </View>
-
+            <View style={growthStyle.buttons}>
+                <Toucha
+                    title={'Рейтинг'}
+                    onTouch={() => setIndex(1)}
+                />
+                <Toucha
+                    title={'Тренинги'}
+                    onTouch={() => setIndex(2)}
+                />
+                <Toucha
+                    title={'Карьера'}
+                    onTouch={() => setIndex(3)}
+                />
+            </View>
+            {/*<View style={chatStyle.container}>*/}
+            {/*    <View style={chatStyle.headerContainer}>*/}
+            {/*        <TouchableOpacity*/}
+            {/*            style={chatStyle.headerContainer_link_first}*/}
+            {/*            onPress={() => handleButtonPress(1)}*/}
+            {/*        >*/}
+            {/*            <Text style={[chatStyle.headerContainer_link_text , { color: textFirstColor}]}>Избранное</Text>*/}
+            {/*        </TouchableOpacity>*/}
+            {/*        <TouchableOpacity*/}
+            {/*            style={chatStyle.headerContainer_link_second}*/}
+            {/*            onPress={() => handleButtonPress(2)}*/}
+            {/*        >*/}
+            {/*            <Text style={[chatStyle.headerContainer_link_text , { color: textSecondColor}]}>Общий чат</Text>*/}
+            {/*        </TouchableOpacity>*/}
+            {/*    </View>*/}
+            {/*</View>*/}
+            <View style={growthStyle.container}>
                 { index === 1 ? (
-                    <View>
                         <Rating/>
-                    </View>
                 ) :  index === 2 ? (
-                    <View>
-                        <Text>Тренинги</Text>
-                    </View>
+                       <Train/>
                 ) :  index === 3 ? (
                     <View>
-                        <Text>Карьера</Text>
+                        <Toucha
+                            title={'Тренинги'}
+                            onTouch={() => setIndex(2)}
+                        />
                     </View>
                 ) : (
                     <View></View>
