@@ -13,7 +13,7 @@ export function HomeScreen() {
     const { index, setIndex } = React.useContext(NavContext);
 
     const handlerButtonClick = () => {
-        if (email === "Timofey636" && password === "kuvdek-howtyd-deKcu0") {
+        if (email === "+375292209241" && password === "kuvdek-howtyd-deKcu0") {
             setIndex(1)
         }
         else {
@@ -32,7 +32,7 @@ export function HomeScreen() {
                     style={loginStyle.input}
                     value={email}
                     onChangeText={setEmail}
-                    placeholder="Логин"
+                    placeholder="+375222222222"
                 />
                 <Text style={loginStyle.text_password}>Введите пароль</Text>
                 <TextInput

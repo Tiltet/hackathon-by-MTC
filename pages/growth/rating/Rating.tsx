@@ -4,8 +4,6 @@ import {useState} from "react";
 import staticEmployees from "../../../static/staticEmployees";
 import {ratingStyle} from "./ratingStyle";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import Train from "../trainings/Train";
-import Career from "../career/Career";
 
 const RatingStack = createNativeStackNavigator();
 
