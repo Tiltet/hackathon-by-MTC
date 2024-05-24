@@ -15,10 +15,14 @@ export function Team() {
                     <Text style={teamStyle.text}>{item.name} {item.surname}</Text>
                 </TouchableOpacity>
                 <View style={teamStyle.planColumn}>
-                    <Text style={teamStyle.text}>{item.plan}</Text>
+                    <Text style={[teamStyle.text, {
+                        textAlign: "center"
+                    }]}>{item.plan}</Text>
                 </View>
                 <View style={teamStyle.factColumn}>
-                    <Text style={teamStyle.text}>{item.fact}</Text>
+                    <Text style={[teamStyle.text, {
+                        textAlign: "center"
+                    }]}>{item.fact}</Text>
                 </View>
             </View>
         )
@@ -35,7 +39,9 @@ export function Team() {
                         <Text style={teamStyle.text}>План</Text>
                     </View>
                     <View style={teamStyle.factColumn}>
-                        <Text style={teamStyle.text}>Факт</Text>
+                        <Text style={[teamStyle.text, {
+                            marginLeft: 15,
+                        }]}>Факт</Text>
                     </View>
                 </View>
                 {renderTeamPeople()}

@@ -1,7 +1,7 @@
 import {StatusBar, TextInput, TouchableOpacity} from "react-native";
 import * as React from 'react';
 import {View, Text, Image} from 'react-native';
-import {useState} from "react";
+import {createContext, useContext, useState} from "react";
 import {loginStyle} from "./loginStyle";
 import {NavContext} from "../../context/navigattionContext";
 
@@ -9,15 +9,12 @@ import {NavContext} from "../../context/navigattionContext";
 export function HomeScreen() {
 
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const { index, setIndex } = React.useContext(NavContext);
+    const [password, setPassword] = useState('')
+    const { index, setIndex } = React.useContext(NavContext)
 
     const handlerButtonClick = () => {
         if (email === "+375292209241" && password === "kuvdek-howtyd-deKcu0") {
             setIndex(1)
-        }
-        else {
-
         }
     }
 

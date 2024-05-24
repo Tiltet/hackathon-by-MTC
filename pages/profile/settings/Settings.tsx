@@ -5,7 +5,8 @@ import {settingsStyle} from "./settingsStyle";
 export function Settings() {
     return (
         <SafeAreaView style={settingsStyle.container}>
-            <Text style={settingsStyle.text}>Настройки</Text>
+            <Text style={settingsStyle.text}>Тут будут Настройки</Text>
+            <Text style={settingsStyle.text}>😊</Text>
         </SafeAreaView>
     )
 }

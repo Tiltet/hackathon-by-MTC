@@ -17,7 +17,10 @@ export function Statistics() {
         return monthStats.map((item) =>
             <View style={teamStyle.line}>
                 <TouchableOpacity style={teamStyle.nameColumn}>
-                    <Text style={teamStyle.text}>{item.month}</Text>
+                    <Text style={[teamStyle.text, {
+                        marginLeft: 5,
+                        fontWeight: "400"
+                    }]}>{item.month}</Text>
                 </TouchableOpacity>
                 <View style={teamStyle.planColumn}>
                     <Text style={[teamStyle.text, { fontWeight: "600" }]}>{item.plan}</Text>
@@ -40,8 +43,11 @@ export function Statistics() {
                 <View style={statisticsStyle.top_container}>
                     <View>
                         <View style={statisticsStyle.top_text}>
-                            <Text style={statisticsStyle.top_text_title}>План на год:</Text>
-                            <Text style={statisticsStyle.top_text_stat}>12</Text>
+                            <Text style={[statisticsStyle.top_text_title, {
+                                fontWeight: "700",
+                                fontSize: 20,
+                            }]}>План на год:</Text>
+                            <Text style={statisticsStyle.top_text_stat}>265</Text>
                         </View>
                         <View style={statisticsStyle.top_text}>
                             <Text style={statisticsStyle.top_text_title}>Выполнено за год:</Text>
@@ -75,13 +81,19 @@ export function Statistics() {
                 <View style={[teamStyle.container, { marginBottom: 20 } ]}>
                     <View style={teamStyle.mainLine}>
                         <View style={teamStyle.nameColumn}>
-                            <Text style={teamStyle.text}>По тарифам</Text>
+                            <Text style={[teamStyle.text, {
+                                fontWeight: "500",
+                            }]}>По тарифам</Text>
                         </View>
                         <View style={teamStyle.planColumn}>
-                            <Text style={teamStyle.text}>План</Text>
+                            <Text style={[teamStyle.text, {
+                                fontWeight: "500",
+                            }]}>План</Text>
                         </View>
                         <View style={teamStyle.factColumn}>
-                            <Text style={teamStyle.text}>Факт</Text>
+                            <Text style={[teamStyle.text, {
+                                fontWeight: "500",
+                            }]}>Факт</Text>
                         </View>
                     </View>
                     {renderMonth()}

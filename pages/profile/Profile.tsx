@@ -9,7 +9,10 @@ import {Settings} from "./settings/Settings";
 
 const ProfileStack = createNativeStackNavigator();
 
-export function Profile() {
+export function Profile( { auth } ) {
+
+    console.log(auth)
+
     return (
         <ProfileStack.Navigator>
             <ProfileStack.Screen

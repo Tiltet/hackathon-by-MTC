@@ -2,64 +2,64 @@
 const staticTeamPeople = [
     {
         id: 1,
-        name: "Timofey",
-        surname: "Savinich",
+        name: "Тимофей",
+        surname: "Савинич",
         plan: "20",
         fact: "15"
     },
     {
         id: 2,
-        name: "Kirill",
-        surname: "Makarov",
+        name: "Кирилл",
+        surname: "Макаров",
         plan: "25",
         fact: "12"
     },
     {
         id: 3,
-        name: "Dmitriy",
-        surname: "Tolkochev",
+        name: "Дмитрий",
+        surname: "Толкачев",
         plan: "18",
         fact: "17"
     },
     {
         id: 4,
-        name: "Timofey",
-        surname: "Savinich",
+        name: "Роман",
+        surname: "Сидорович",
         plan: "20",
         fact: "15"
     },
     {
         id: 5,
-        name: "Kirill",
-        surname: "Makarov",
+        name: "Тимофей",
+        surname: "Новиков",
         plan: "25",
         fact: "12"
     },
     {
         id: 6,
-        name: "Dmitriy",
-        surname: "Tolkochev",
+        name: "Никита",
+        surname: "Хорошун",
         plan: "18",
         fact: "17"
     },
     {
         id: 7,
-        name: "Timofey",
-        surname: "Savinich",
+        name: "Александр",
+        surname: "Мынзул",
         plan: "20",
         fact: "15"
     },
     {
         id: 8,
-        name: "Kirill",
-        surname: "Makarov",
+        name: "Демидович",
+        surname: "Руслан",
         plan: "25",
         fact: "12"
     },
     {
         id: 9,
-        name: "Dmitriy",
-        surname: "Tolkochev",
+        name: "Можейко",
+        surname: "Дмитрий",
         plan: "18",
         fact: "17"
     },
