@@ -8,5 +8,3 @@
 
 <p class="text">As a result, our team has developed a core-platform mobile application for iOS and Android</p>
 
-<img src="./assets/video/application.gif" alt="test">
-
