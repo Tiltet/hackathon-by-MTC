@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Text, TouchableOpacity, Image, ScrollView} from "react-native";
+import {View, Text, TouchableOpacity, Image, ScrollView, SafeAreaView} from "react-native";
 import { profileStyle } from "./profileStyle";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Statistics } from "./statistics/Statistics";
@@ -9,11 +9,23 @@ import {Settings} from "./settings/Settings";
 
 const ProfileStack = createNativeStackNavigator();
 
-export function Profile() {
+export function Profile( { auth } ) {
+
+    console.log(auth)
+
     return (
         <ProfileStack.Navigator>
-            <ProfileStack.Screen name="Профиль" component={ProfileRender} />
-            <ProfileStack.Screen name="Статистика" component={Statistics} />
+            <ProfileStack.Screen
+                name="Профиль"
+                component={ProfileRender}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <ProfileStack.Screen
+                name="Статистика"
+                component={Statistics}
+            />
             <ProfileStack.Screen name="График" component={Schedule} />
             <ProfileStack.Screen name="Бонусы" component={Bonuses} />
             <ProfileStack.Screen name="Настройки" component={Settings} />
@@ -23,7 +35,7 @@ export function Profile() {
 
 export function ProfileRender({ navigation }) {
     return (
-        <View style={profileStyle.wrapper}>
+        <SafeAreaView style={profileStyle.wrapper}>
             <ScrollView>
                 <View style={profileStyle.container}>
                     <View style={profileStyle.header}>
@@ -32,9 +44,6 @@ export function ProfileRender({ navigation }) {
                         </View>
                         <View style={profileStyle.headerImageContainer}>
                             <TouchableOpacity>
-                                <Image style={profileStyle.headerImage} source={require('../../assets/img/profile/profile.png')}/>
-                            </TouchableOpacity>
-                            <TouchableOpacity>
                                 <Image style={profileStyle.headerImage} source={require('../../assets/img/profile/exit.png')}/>
                             </TouchableOpacity>
                         </View>
@@ -42,7 +51,7 @@ export function ProfileRender({ navigation }) {
                 </View>
 
                 <View style={profileStyle.profile_container}>
-                    <Image style={profileStyle.profileImage}  source={require("../../assets/img/profile/ava.jpg")}/>
+                    <Image style={profileStyle.profileImage}  source={{ uri: "https://img.freepik.com/free-photo/portrait-of-handsome-bearded-man-outside_23-2150266915.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1715990400&semt=ais_user"}}/>
                     <View style={profileStyle.profileTextContainer}>
                         <Text style={profileStyle.profileText}>Кирилл</Text>
                         <Text style={profileStyle.profileText}>Макаров</Text>
@@ -106,6 +115,6 @@ export function ProfileRender({ navigation }) {
                     </View>
                 </View>
             </ScrollView>
-        </View>
+        </SafeAreaView>
     )
 }

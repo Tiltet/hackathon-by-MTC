@@ -5,7 +5,7 @@ export const profileStyle = StyleSheet.create({
         paddingTop: 5,
     },
     container: {
-      marginHorizontal: 15,
+        marginHorizontal: 15,
     },
     header: {
         display: "flex",
@@ -14,11 +14,10 @@ export const profileStyle = StyleSheet.create({
         alignItems: 'center',
     },
     headerImage:{
-        height: 30,
-        width: 30,
+        height: 26,
+        width: 26,
     },
     headerImageContainer: {
-        width: 70,
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "row",
@@ -31,7 +30,7 @@ export const profileStyle = StyleSheet.create({
         fontSize: 20,
     },
     profile_container: {
-        marginTop: 20,
+        marginTop: 10,
         paddingVertical: 10,
         paddingHorizontal: 25,
         width: '100%',
@@ -58,32 +57,35 @@ export const profileStyle = StyleSheet.create({
         marginTop: 15,
         width: '100%',
         borderWidth: 1,
-        alignSelf: "center",
+        shadowColor: "#000",
+        borderColor: 'rgba(0, 0, 0, 0.1)',
         borderRadius: 10,
-        justifyContent: "space-between",
+        alignSelf: "center",
     },
     outerContainer:{
+        paddingHorizontal: 5,
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "row",
     },
     mainInfoText: {
-        fontSize: 24,
+        fontSize: 22,
         fontWeight: "700",
         fontFamily: "Montserrat",
     },
     underInfo: {
-      paddingTop: 15,
+      paddingTop: 12,
     },
     infoText: {
-        fontSize: 16,
+        fontSize: 14,
         color: "#aba9a6"
     },
     buttonImg: {
-        height: 70,
-        width: 70,
+        height: 85,
+        width: 85,
     },
     mainButtonContainer: {
+        marginBottom: 20,
         display: "flex",
         alignSelf: "center",
         width: "100%",
@@ -93,15 +95,16 @@ export const profileStyle = StyleSheet.create({
         marginTop: 20,
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         alignItems:"center"
     },
     button: {
         height: 150,
-        width: 150,
-        alignItems:"center",
+        width: 170,
+        alignItems: "center",
         justifyContent: "space-around",
         borderWidth: 1,
+        borderColor: 'rgba(0, 0, 0, 0.1)',
         borderRadius: 15,
     },
     buttonText: {
