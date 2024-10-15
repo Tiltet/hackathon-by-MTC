@@ -5,9 +5,12 @@ export const newsStyle = StyleSheet.create({
         marginTop: 0,
     },
     news_image_container: {
+        paddingHorizontal: 10,
+        width: 360,
         paddingBottom: 20,
         marginTop: 20,
         borderBottomWidth: 1,
+        borderRightWidth: 1,
         borderColor: 'rgba(0, 0, 0, 0.1)',
     },
     news_image: {

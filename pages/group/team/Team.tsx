@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Text, SafeAreaView, View, TouchableOpacity} from "react-native";
-import { useState } from "react";
+import {useState} from "react";
 import staticTeamPeople from "../../../static/staticTeams";
 import { teamStyle } from "./teamStyle";
 

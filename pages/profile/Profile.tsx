@@ -6,6 +6,7 @@ import { Statistics } from "./statistics/Statistics";
 import { Schedule } from "./schedule/Schedule";
 import { Bonuses } from "./bonuses/Bonuses";
 import {Settings} from "./settings/Settings";
+import {useRef} from "react";
 
 const ProfileStack = createNativeStackNavigator();
 
@@ -34,6 +35,9 @@ export function Profile( { auth } ) {
 }
 
 export function ProfileRender({ navigation }) {
+
+    const bottomSheetRef = useRef(null);
+
     return (
         <SafeAreaView style={profileStyle.wrapper}>
             <ScrollView>
@@ -115,6 +119,8 @@ export function ProfileRender({ navigation }) {
                     </View>
                 </View>
             </ScrollView>
+
+
         </SafeAreaView>
     )
 }

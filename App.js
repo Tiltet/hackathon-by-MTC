@@ -2,11 +2,10 @@ import * as React from 'react';
 import {StyleSheet} from 'react-native';
 import { useState } from "react";
 import { NavContext } from "./context/navigattionContext";
-import {HomeScreen, useAppValue} from "./components/auth/Login";
+import {HomeScreen} from "./components/auth/Login";
 import {Navigation} from "./components/navigation/Navigation";
 import {NavigationContainer} from "@react-navigation/native";
 import {Profile} from "./pages/profile/Profile";
-import {RegContext} from "./context/regContext";
 
 export default function App() {
 

@@ -13,7 +13,7 @@ export function HomeScreen() {
     const { index, setIndex } = React.useContext(NavContext)
 
     const handlerButtonClick = () => {
-        if (email === "+375292209241" && password === "kuvdek-howtyd-deKcu0") {
+        if (email === "1" && password === "1") {
             setIndex(1)
         }
     }
